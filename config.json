@@ -7,8 +7,8 @@
     "type": "REST",
     "lang": {
         "en-US": {
-            "name": "Mi Actividad Personalizada",
-            "description": "Envía notificaciones personalizadas."
+            "name": "SMS Custom Activity",
+            "description": "Envía sms personalizadas."
         }
     }
 }
