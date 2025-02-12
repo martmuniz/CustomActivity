@@ -10,5 +10,10 @@
             "name": "SMS Custom Activity",
             "description": "Envía sms personalizadas."
         }
-    }
+    },
+    "userInterfaces": {
+        "configInspector": {
+          "size": "medium"
+        }
+      }
 }
