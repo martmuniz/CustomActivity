@@ -4,12 +4,12 @@ var connection = new Postmonger.Session();
 connection.trigger('ready');
 
 connection.on('initActivity', function(data) { 
-    document.getElementById('configurarion').value = JSON.stringify( data, null, 2);
+    document.getElementById('message').value = JSON.stringify( data, null, 2);
 });
 
 // Save Sequence
 connection.on('clickedNext', function() {
-    var configuration = JSON.parse(document.getElementById('configurarion').value);
+    var configuration = JSON.parse(document.getElementById('message').value);
     connection.trigger('updateActivity', configuration);
 });
 
