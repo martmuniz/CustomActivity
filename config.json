@@ -56,5 +56,43 @@
             "next": "WAITBYDURATION"
         }
     ],
-    "errors": null
+    "errors": null,
+    "schema": {
+        "arguments": {
+          "execute": {
+            "inArguments": [
+              {
+                "contactKey": {
+                  "dataType": "Text",
+                  "isNullable": false,
+                  "direction": "in"
+                }
+              },
+              {
+                "emailAddress": {
+                  "dataType": "Email",
+                  "isNullable": false,
+                  "direction": "in"
+                }
+              },
+              {
+                "apiKey": {
+                  "dataType": "Text",
+                  "isNullable": false,
+                  "direction": "in"
+                }
+              }
+            ],
+            "outArguments": [
+              {
+                "foundSignupDate": {
+                  "dataType": "Date",
+                  "direction": "out",
+                  "access": "visible"
+                }
+              }
+            ]
+          }
+        }
+      }
 }
