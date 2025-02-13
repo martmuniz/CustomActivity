@@ -27,8 +27,8 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "Martin",
-                    "contactKey": "TEST",
+                    "emailAddress": "{{InteractionDefaults.Email}}",
+                    "contactKey": "{{Context.ContactKey}}",
                     "customerKey": ""
                 }
             ],
@@ -46,14 +46,17 @@
         "unpublish": "",
         "stop": "",
         "partnerActivityId": "",
-        "validate": true,
+        "validate": "",
         "outArgumentSchema": "",
         "executeSchema": ""
     },
     "editable": true,
     "outcomes": [
         {
-            "next": "WAITBYDURATION"
+            "next": "WAITBYDURATION-4",
+            "metaData": {
+                "invalid": false
+            }
         }
     ],
     "errors": null

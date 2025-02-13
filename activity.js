@@ -23,6 +23,6 @@ connection.on('clickedNext', function() {
         payload["arguments"].execute.inArguments[0].customerKey = key;
         connection.trigger('updateActivity', payload);
     } else {
-        alert('Customer Key cannot be empty');
+        alert('el campo no puede estar vacío');
     }
 });
