@@ -34,7 +34,7 @@
                     "customerKey": ""
                 }
             ],
-            "url" : ""
+            "url" : "https://martmuniz.github.io/CustomActivity/"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -44,7 +44,7 @@
     "configurationArguments": {
         "save" : "",
         "publish": {
-            "url": ""
+            "url": "https://martmuniz.github.io/CustomActivity/"
         },
         "unpublish":"",
         "stop":"",
