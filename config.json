@@ -9,18 +9,16 @@
     },
     "type": "REST",
     "lang": {
-        "en-US": {
+        "es-ES": {
             "name": "SMS Custom Activity",
             "description": "Envia sms personalizadas."
         }
     },
-
     "userInterfaces": {
         "configInspector": {
             "size": "medium"
         }
     },
-
     "arguments": {
         "executionMode": "{{Context.ExecutionMode}}",
         "definitionId": "{{Context.DefinitionId}}",
@@ -28,40 +26,38 @@
         "contactKey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
-                {   
+                {
                     "emailAddress": "{{InteractionDefaults.Email}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "customerKey": ""
                 }
             ],
-            "url" : "https://cloud.email.aquaservice.com/test_ca"
+            "url": "https://cloud.email.aquaservice.com/test_ca"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
         "requestObjetctId": "{{Context.RequestObjetctId}}"
     },
-
     "configurationArguments": {
-        "save" : "",
+        "save": "",
         "publish": {
             "url": "https://cloud.email.aquaservice.com/test_ca"
         },
-        "unpublish":"",
-        "stop":"",
-        "partnerActivityId":"",
-        "validate":"",
-        "outArgumentSchema":"",
-        "executeSchema":""
+        "unpublish": "",
+        "stop": "",
+        "partnerActivityId": "",
+        "validate": "",
+        "outArgumentSchema": "",
+        "executeSchema": ""
     },
     "editable": true,
     "outcomes": [
         {
-          "next": "WAITBYDURATION-4",
-          "metaData": {
-            "invalid": false
-          }
+            "next": "WAITBYDURATION-4",
+            "metaData": {
+                "invalid": false
+            }
         }
-      ],
-      "errors": null
-
+    ],
+    "errors": null
 }
