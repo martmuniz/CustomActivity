@@ -46,7 +46,7 @@
         "unpublish": "",
         "stop": "",
         "partnerActivityId": "",
-        "validate": "",
+        "validate": true,
         "outArgumentSchema": "",
         "executeSchema": ""
     },
