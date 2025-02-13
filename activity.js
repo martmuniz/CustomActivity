@@ -4,12 +4,18 @@ var connection = new Postmonger.Session();
 connection.trigger('ready');
 
 connection.on('initActivity', function(data) { 
-    document.getElementById('configuration').value = JSON.stringify( data, null, 2);
+    if (data) {
+        payload = data;
+    }
+    document.getElementById('configuration').value = payload["arguments"].execute.inArguments[0].customerKey;
 });
 
 // Save Sequence
 connection.on('clickedNext', function() {
-    var configuration = JSON.parse(document.getElementById('configuration').value);
-    connection.trigger('updateActivity', configuration);
+    var key = document.getElementById('configuration').value.trim();
+
+    payload["arguments"].execute.inArguments[0].customerKey = key;
+
+    connection.trigger('updateActivity', payload);
 });
 

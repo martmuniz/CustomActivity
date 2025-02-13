@@ -14,9 +14,54 @@
             "description": "Envía sms personalizadas."
         }
     },
+
     "userInterfaces": {
         "configInspector": {
-          "size": "medium"
+            "size": "medium"
         }
-      }
+    },
+
+    "arguments": {
+        "executionMode": "{{Context.ExecutionMode}}",
+        "definitionId": "{{Context.DefinitionId}}",
+        "activityId": "{{Activity.Id}}",
+        "contactKey": "{{Context.ContactKey}}",
+        "execute": {
+            "inArguments": [
+                {   
+                    "emailAddress": "{{InteractionDefaults.Email}}",
+                    "contactKey": "{{Context.ContactKey}}",
+                    "customerKey": ""
+                }
+            ],
+            "url" : ""
+        },
+        "startActivityKey": "{{Context.StartActivityKey}}",
+        "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
+        "requestObjetctId": "{{Context.RequestObjetctId}}"
+    },
+
+    "configurationArguments": {
+        "save" : "",
+        "publish": {
+            "url": ""
+        },
+        "unpublish":"",
+        "stop":"",
+        "partnerActivityId":"",
+        "validate":"",
+        "outArgumentSchema":"",
+        "executeSchema":""
+    },
+    "editable": true,
+    "outcomes": [
+        {
+          "next": "WAITBYDURATION-4",
+          "metaData": {
+            "invalid": false
+          }
+        }
+      ],
+      "errors": null
+
 }
