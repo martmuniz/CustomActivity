@@ -30,7 +30,7 @@
                     "emailAddress": "{{InteractionDefaults.Email}}"
                   },
                   {
-                    "phoneNumber": "{{Contact.Default.ContactKey}}"
+                    "contactKey": "{{Contact.Default.ContactKey}}"
                   },
                   {
                     "customerKey" : ""
