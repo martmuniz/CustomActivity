@@ -2,7 +2,10 @@
     "workflowApiVersion": "1.1",
     "metaData": {
         "icon": "aquaservice-logo.png",
-        "category": "message"
+        "category": "message",
+        "IsConfigured": true,
+        "configurationDisabled": false,
+        "configOnDrop": false
     },
     "type": "REST",
     "lang": {
