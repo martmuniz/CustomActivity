@@ -27,12 +27,8 @@
         "execute": {
             "inArguments": [
                   {
-                    "emailAddress": "{{InteractionDefaults.Email}}"
-                  },
-                  {
-                    "contactKey": "{{Contact.Default.ContactKey}}"
-                  },
-                  {
+                    "emailAddress": "{{InteractionDefaults.Email}}",            
+                    "contactKey": "{{Contact.ContactKey}}",
                     "customerKey" : ""
                   }
 
