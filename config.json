@@ -3,7 +3,7 @@
     "metaData": {
         "icon": "aquaservice-logo.png",
         "category": "message",
-        "IsConfigured": true,
+        "IsConfigured": false,
         "configurationDisabled": false,
         "configOnDrop": false
     },
