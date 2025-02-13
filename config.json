@@ -10,7 +10,7 @@
     "type": "REST",
     "lang": {
         "es-ES": {
-            "name": "SMS Custom Activity",
+            "name": "SMS Custom Activitys",
             "description": "Envia sms personalizadas."
         }
     },
