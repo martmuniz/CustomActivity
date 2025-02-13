@@ -76,19 +76,10 @@
                 }
               },
               {
-                "apiKey": {
+                "customerKey": {
                   "dataType": "Text",
                   "isNullable": false,
                   "direction": "in"
-                }
-              }
-            ],
-            "outArguments": [
-              {
-                "foundSignupDate": {
-                  "dataType": "Date",
-                  "direction": "out",
-                  "access": "visible"
                 }
               }
             ]
