@@ -1,4 +1,5 @@
 var connection = new Postmonger.Session();
+var payload = {};
 
 //Startup Sequence 
 connection.trigger('ready');
