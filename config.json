@@ -82,6 +82,15 @@
                   "direction": "in"
                 }
               }
+            ],
+            "outArguments": [
+              {
+                "result": {
+                  "dataType": "boolean",
+                  "direction": "out",
+                  "access": "visible"
+                }
+              }
             ]
           }
         }
