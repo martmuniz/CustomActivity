@@ -53,10 +53,7 @@
     "editable": true,
     "outcomes": [
         {
-            "next": "WAITBYDURATION-4",
-            "metaData": {
-                "invalid": false
-            }
+            "next": "WAITBYDURATION-4"
         }
     ],
     "errors": null
