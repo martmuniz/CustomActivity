@@ -8,12 +8,12 @@ connection.on('initActivity', function(data) {
     if (data) {
         payload = data;
     }
-    document.getElementById('configuration').value = payload["arguments"].execute.inArguments[0].customerKey;
+    document.getElementById('key').value = payload["arguments"].execute.inArguments[0].customerKey;
 });
 
 // Save Sequence
 connection.on('clickedNext', function() {
-    var key = document.getElementById('configuration').value.trim();
+    var key = document.getElementById('key').value.trim();
 
     payload["arguments"].execute.inArguments[0].customerKey = key;
 
