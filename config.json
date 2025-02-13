@@ -27,8 +27,8 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{InteractionDefaults.Email}}",
-                    "contactKey": "{{Context.ContactKey}}",
+                    "emailAddress": "Martin",
+                    "contactKey": "TEST",
                     "customerKey": ""
                 }
             ],
