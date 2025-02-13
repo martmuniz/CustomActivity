@@ -34,7 +34,7 @@
                     "customerKey": ""
                 }
             ],
-            "url" : "http://requestbin.whapi.cloud/z4ttj2z4"
+            "url" : "https://cloud.email.aquaservice.com/test_ca"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -44,7 +44,7 @@
     "configurationArguments": {
         "save" : "",
         "publish": {
-            "url": "http://requestbin.whapi.cloud/z4ttj2z4"
+            "url": "https://cloud.email.aquaservice.com/test_ca"
         },
         "unpublish":"",
         "stop":"",
