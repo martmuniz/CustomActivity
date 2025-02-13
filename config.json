@@ -26,12 +26,11 @@
         "contactKey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
-                  {
-                    "emailAddress": "{{InteractionDefaults.Email}}",            
-                    "contactKey": "{{Contact.ContactKey}}",
-                    "customerKey" : ""
-                  }
-
+                {
+                    "emailAddress": "{{InteractionDefaults.Email}}",
+                    "contactKey": "{{Context.ContactKey}}",
+                    "customerKey": ""
+                }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
         },
@@ -54,10 +53,7 @@
     "editable": true,
     "outcomes": [
         {
-            "next": "WAITBYDURATION",
-            "metaData": {
-                "invalid": false
-            }
+            "next": "WAITBYDURATION"
         }
     ],
     "errors": null
