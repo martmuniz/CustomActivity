@@ -1,90 +1,68 @@
 {
     "workflowApiVersion": "1.1",
     "metaData": {
-      "icon": "aquaservice-logo.png",
-      "category": "message"
+        "icon": "aquaservice-logo.png",
+        "category": "message",
+        "IsConfigured": true,
+        "configurationDisabled": false,
+        "configOnDrop": false
     },
     "type": "REST",
     "lang": {
-      "en-US": {
-        "name": "REST Activity (Workflow API v1.1)",
-        "description": "An example REST activity using workflow API v1.1 format."
-      }
+        "es-ES": {
+            "name": "SMS Custom Activity",
+            "description": "Envia sms personalizadas."
+        }
+    },
+    "userInterfaces": {
+        "configInspector": {
+            "size": "medium"
+        }
     },
     "arguments": {
-      "execute": {
-        "inArguments": [
-          {
-            "emailAddress": "{{InteractionDefaults.Email}}"
-          },
-          {
-            "phoneNumber": "{{Contact.Default.PhoneNumber}}"
-          }
-        ],
-        "outArguments": [
-          {
-            "foundSignupDate": ""
-          }
-        ],
-        "url": "https://cloud.email.aquaservice.com/test_ca"
-      }
+        "executionMode": "{{Context.ExecutionMode}}",
+        "definitionId": "{{Context.DefinitionId}}",
+        "activityId": "{{Activity.Id}}",
+        "contactKey": "{{Context.ContactKey}}",
+        "execute": {
+            "inArguments": [
+                  {
+                    "emailAddress": "{{InteractionDefaults.Email}}"
+                  },
+                  {
+                    "contactKey": "{{Contact.Default.ContactKey}}"
+                  },
+                  {
+                    "customerKey" : ""
+                  }
+
+            ],
+            "url": "https://cloud.email.aquaservice.com/test_ca"
+        },
+        "startActivityKey": "{{Context.StartActivityKey}}",
+        "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
+        "requestObjetctId": "{{Context.RequestObjetctId}}"
     },
     "configurationArguments": {
-      "save": {
-        "url": "https://cloud.email.aquaservice.com/test_ca"
-      },
-      "publish": {
-        "url": "https://cloud.email.aquaservice.com/test_ca"
-      },
-      "validate": {
-        "url": "https://cloud.email.aquaservice.com/test_ca"
-      },
-      "stop": {
-        "url": "Uhttps://cloud.email.aquaservice.com/test_ca"
-      }
+        "save": "",
+        "publish": {
+            "url": "https://cloud.email.aquaservice.com/test_ca"
+        },
+        "unpublish": "",
+        "stop": "",
+        "partnerActivityId": "",
+        "validate": "",
+        "outArgumentSchema": "",
+        "executeSchema": ""
     },
-    "wizardSteps": [
-      { "label": "Step 1", "key": "step1" },
-      { "label": "Step 2", "key": "step2" },
-      { "label": "Step 3", "key": "step3" },
-      { "label": "Step 4", "key": "step4", "active": false }
-    ],
-    "userInterfaces": {
-      "configModal": {
-        "height": 200,
-        "width": 300,
-        "fullscreen": true
-      }
-    },
-    "schema": {
-      "arguments": {
-        "execute": {
-          "inArguments": [
-            {
-              "phoneNumber": {
-                "dataType": "Phone",
-                "isNullable": false,
-                "direction": "in"
-              }
-            },
-            {
-              "emailAddress": {
-                "dataType": "Email",
-                "isNullable": false,
-                "direction": "in"
-              }
+    "editable": true,
+    "outcomes": [
+        {
+            "next": "WAITBYDURATION-4",
+            "metaData": {
+                "invalid": false
             }
-          ],
-          "outArguments": [
-            {
-              "foundSignupDate": {
-                "dataType": "Date",
-                "direction": "out",
-                "access": "visible"
-              }
-            }
-          ]
         }
-      }
-    }
-  }
+    ],
+    "errors": null
+}
