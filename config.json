@@ -34,7 +34,7 @@
                     "customerKey": ""
                 }
             ],
-            "url" : "https://martmuniz.github.io/CustomActivity/"
+            "url" : "http://requestbin.whapi.cloud/z4ttj2z4"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -44,7 +44,7 @@
     "configurationArguments": {
         "save" : "",
         "publish": {
-            "url": "https://martmuniz.github.io/CustomActivity/"
+            "url": "http://requestbin.whapi.cloud/z4ttj2z4"
         },
         "unpublish":"",
         "stop":"",
