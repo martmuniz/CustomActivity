@@ -27,9 +27,9 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{InteractionDefaults.Email}}",
+                    "recipients": "{{InteractionDefaults.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
-                    "customerKey": ""
+                    "message": ""
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
@@ -69,14 +69,14 @@
                 }
               },
               {
-                "emailAddress": {
-                  "dataType": "Email",
+                "recipients": {
+                  "dataType": "Phone",
                   "isNullable": false,
                   "direction": "in"
                 }
               },
               {
-                "customerKey": {
+                "message": {
                   "dataType": "Text",
                   "isNullable": false,
                   "direction": "in"
