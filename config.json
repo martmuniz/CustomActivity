@@ -33,7 +33,7 @@
                     "message": ""
                 },
                 {
-                  "phone": "{{Event.DEAudience-50a05169-0aa5-c3ed-32f8-762f3e5052f0.Phone}}"
+                  "phone": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}"
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
