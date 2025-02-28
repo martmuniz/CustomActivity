@@ -26,8 +26,8 @@
         "contactKey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
-                { "emailAddress": "{{InteractionDefaults.Email}}" },                    
-                { "contactKey": "{{Context.ContactKey}}"},
+                { "emailAddress": "{{Contact.Attribute.DE_Test_Envio_SMS.Email}}" },                    
+                { "contactKey": "{{Contact.Key}}"},
                 { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}"},
                 { "message": ""}
                 
