@@ -33,7 +33,7 @@
                 { "message": ""}
                 
             ],
-            "url": "https://cloud.email.aquaservice.com/test_ca_api"
+            "url": "http://requestbin.whapi.cloud/1bzxdwn1/execute"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
