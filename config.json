@@ -30,7 +30,7 @@
                 {
                     "emailAddress": "{{InteractionDefaults.Email}}",
                     "contactKey": "{{Context.ContactKey}}",
-                    "customerKey": ""
+                    "message": ""
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
@@ -77,7 +77,7 @@
                 }
               },
               {
-                "customerKey": {
+                "message": {
                   "dataType": "Text",
                   "isNullable": false,
                   "direction": "in"
