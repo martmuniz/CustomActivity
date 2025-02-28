@@ -33,7 +33,7 @@
                 { "message": ""}
                 
             ],
-            "url": "https://cloud.email.aquaservice.com/test_ca"
+            "url": "https://cloud.email.aquaservice.com/test_ca_api"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -42,7 +42,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "https://cloud.email.aquaservice.com/test_ca"
+            "url": "https://cloud.email.aquaservice.com/test_ca_api"
 
         },
         "unpublish": "",
