@@ -28,7 +28,7 @@
             "inArguments": [
                 { "emailAddress": "{{Contact.Attribute.DE_Test_Envio_SMS.Email}}" },                    
                 { "contactKey": "{{Contact.Key}}" },
-                { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}" },
+                { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.MobileNumber}}" },
                 { "message": "" }
                 
             ],
