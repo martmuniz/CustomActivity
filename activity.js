@@ -3,6 +3,11 @@ var payload = {};
 
 // Startup Sequence 
 connection.trigger('ready');
+connection.trigger('requestSchema');
+connection.on('requestedSchema', function (data) {
+    // save schema
+    console.log('*** Schema ***', JSON.stringify(data['schema']));
+ });
 
 connection.on('initActivity', function(data) { 
     if (data) {
