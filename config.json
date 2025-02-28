@@ -28,8 +28,8 @@
         "execute": {
             "inArguments": [
                 {
-                    "phone": "{{Contact.Attribute.SMSCustomActivity.Email}}",
-                    "emailAddress": "{{Contact.Attribute.SMSCustomActivity.Email}}",                    
+                    "phone": "{{InteractionDefaults.Email}}",
+                    "emailAddress": "{{InteractionDefaults.Email}}",                    
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
                 }
