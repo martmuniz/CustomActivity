@@ -27,20 +27,13 @@
         "contactKey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
-                {
-                    "emailAddress": "{{InteractionDefaults.Email}}",                    
-                    "contactKey": "{{Context.ContactKey}}",
-                    "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
-                    "message": ""
-                }
+                { "emailAddress": "{{InteractionDefaults.Email}}" },                    
+                { "contactKey": "{{Context.ContactKey}}"},
+                { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}"},
+                { "message": ""}
+                
             ],
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/execute",
-            "verb": "POST",
-            "body":"",
-            "header":"",
-            "content-type":"application/json",
-            "useJwt": false,
-            "timeout": 10000
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/execute"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -49,9 +42,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/publish",
-            "verb": "POST",
-            "useJwt": false
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/publish"
 
         },
         "unpublish": "",
