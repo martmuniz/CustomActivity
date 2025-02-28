@@ -38,7 +38,7 @@
             "header": "",
             "format": "",
             "useJwt": false,
-            "timeout": 10000
+            "timeout": 1000
 
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
