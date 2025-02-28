@@ -16,7 +16,6 @@ connection.on('initActivity', function(data) {
     // Check if customerKey exists before assigning
     if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].message) {
         document.getElementById('key').value = payload["arguments"].execute.inArguments[0].message;
-        document.getElementById('phone').value = payload["arguments"].execute.inArguments[0].mobilePhone;
     }
 });
 
@@ -27,8 +26,6 @@ connection.on('clickedNext', function() {
     // Ensure key is not empty
     if (key) {
         payload["arguments"].execute.inArguments[0].message = key;
-        payload["arguments"].execute.inArguments[0].mobilePhone = phone;
-
         connection.trigger('updateActivity', payload);
     } else {
         alert('el campo no puede estar vacío');
