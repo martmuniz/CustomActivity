@@ -28,7 +28,7 @@
         "execute": {
             "inArguments": [
                 {
-                    "phone": "{{InteractionDefaults.Phone}}",
+                    "phone": "{{Context.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
                 }
