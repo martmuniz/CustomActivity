@@ -78,6 +78,13 @@
                 }
               },
               {
+                "phone": {
+                  "dataType": "Text",
+                  "isNullable": false,
+                  "direction": "in"
+                }
+              },
+              {
                 "message": {
                   "dataType": "Text",
                   "isNullable": false,
