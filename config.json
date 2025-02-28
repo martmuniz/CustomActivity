@@ -1,6 +1,5 @@
 {
-    "workflowApiVersion": "1.1",
-    "key": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
+    "workflowApiVersion": "1.1",    
     "metaData": {
         "icon": "aquaservice-logo.png",
         "category": "message",
@@ -47,6 +46,7 @@
         "requestObjetctId": "{{Context.RequestObjetctId}}"
     },
     "configurationArguments": {
+      "applicationExtensionKey": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
         "save": "",
         "publish": {
             "url": "http://requestbin.whapi.cloud/1bzxdwn1/execute",
