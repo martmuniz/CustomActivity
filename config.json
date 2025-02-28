@@ -30,10 +30,8 @@
                 {
                     "emailAddress": "{{InteractionDefaults.Email}}",                    
                     "contactKey": "{{Context.ContactKey}}",
+                    "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
                     "message": ""
-                },
-                {
-                  "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}"
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
