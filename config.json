@@ -29,7 +29,7 @@
             "inArguments": [
                 {
                     "emailAddress": "{{InteractionDefaults.Email}}",
-                    "phone": "{{Event.DEAudience-1.Phone}}",
+                    "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
                 }
