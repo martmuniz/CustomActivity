@@ -28,12 +28,10 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{InteractionDefaults.Email}}",                    
+                    "phone": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}",
+                    "emailAddress": "{{Contact.Attribute.SMSCustomActivity.Email}}",                    
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
-                },
-                {
-                  "phone": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}"
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
