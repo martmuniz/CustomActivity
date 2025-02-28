@@ -34,7 +34,7 @@
                     "message": ""
                 }
             ],
-            "url": "http://requestbin.whapi.cloud/1bzxdwn1/execute",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/execute",
             "verb": "POST",
             "body":"",
             "header":"",
@@ -49,7 +49,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "http://requestbin.whapi.cloud/1bzxdwn1/publish",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/publish",
             "verb": "POST",
             "useJwt": false
 
