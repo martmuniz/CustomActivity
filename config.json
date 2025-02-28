@@ -29,7 +29,7 @@
             "inArguments": [
                 {
                     "emailAddress": "TEXT",
-                    "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
+                    "phone": "{{Contact.Attribute.89D26A54-790C-4A13-83EE-D25DFD1F0A89.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
                 }
