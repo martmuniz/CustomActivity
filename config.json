@@ -34,7 +34,7 @@
                     "message": ""
                 }
             ],
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/execute",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
             "verb": "POST",
             "body":"",
             "header":"",
@@ -49,7 +49,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net/publish",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
             "verb": "POST",
             "useJwt": false
 
