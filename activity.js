@@ -26,6 +26,11 @@ connection.on('clickedNext', function() {
     // Ensure key is not empty
     if (key) {
         payload["arguments"].execute.inArguments[0].message = key;
+        payload["arguments"].execute.inArguments[
+            {
+                "mobilePhone" : "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}"
+            }
+        ]
         connection.trigger('updateActivity', payload);
     } else {
         alert('el campo no puede estar vacío');
