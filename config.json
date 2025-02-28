@@ -28,7 +28,7 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
+                    "emailAddress": "TEXT",
                     "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
