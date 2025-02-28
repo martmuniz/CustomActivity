@@ -28,7 +28,8 @@
         "execute": {
             "inArguments": [
                 {
-                    "phone": "{{Context.Phone}}",
+                    "emailAddress": "{{InteractionDefaults.Email}}",
+                    "phone": "{{Event.DEAudience-1.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
                 }
@@ -70,8 +71,8 @@
                 }
               },
               {
-                "phone": {
-                  "dataType": "Text",
+                "emailAddress": {
+                  "dataType": "Email",
                   "isNullable": false,
                   "direction": "in"
                 }
