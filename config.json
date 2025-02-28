@@ -34,7 +34,7 @@
                     "message": ""
                 }
             ],
-            "url": "http://requestbin.whapi.cloud/vbsc8xvb/execute"
+            "url": "http://requestbin.whapi.cloud/1bzxdwn1/execute"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -43,7 +43,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "http://requestbin.whapi.cloud/vbsc8xvb/publish"
+            "url": "http://requestbin.whapi.cloud/1bzxdwn1/publish"
         },
         "unpublish": "",
         "stop": "",
