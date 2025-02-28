@@ -28,7 +28,7 @@ connection.on('clickedNext', function() {
         payload["arguments"].execute.inArguments[0].message = key;
         payload["arguments"].execute.inArguments[
             {
-                "mobilePhone" : "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}"
+                "mobilePhone" : "test"
             }
         ]
         connection.trigger('updateActivity', payload);
