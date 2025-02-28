@@ -28,10 +28,12 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{InteractionDefaults.Email}}",
-                    "phone": "{{Contact.Attribute.89D26A54-790C-4A13-83EE-D25DFD1F0A89.Phone}}",
+                    "emailAddress": "{{InteractionDefaults.Email}}",                    
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
+                },
+                {
+                  "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}"
                 }
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca"
