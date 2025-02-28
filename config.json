@@ -27,9 +27,9 @@
         "execute": {
             "inArguments": [
                 { "emailAddress": "{{Contact.Attribute.DE_Test_Envio_SMS.Email}}" },                    
-                { "contactKey": "{{Contact.Key}}"},
-                { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}"},
-                { "message": ""}
+                { "contactKey": "{{Contact.Key}}" },
+                { "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}" },
+                { "message": "" }
                 
             ],
             "url": "https://cloud.email.aquaservice.com/test_ca_api",
