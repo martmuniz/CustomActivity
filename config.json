@@ -28,13 +28,13 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",                    
+                    "emailAddress": "{{InteractionDefaults.Email}}",                    
                     "contactKey": "{{Context.ContactKey}}",
                     "phone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
                     "message": ""
                 }
             ],
-            "url": "https://cloud.email.aquaservice.com/test_ca"
+            "url": "http://requestbin.whapi.cloud/1bzxdwn1/execute"
         },
         "startActivityKey": "{{Context.StartActivityKey}}",
         "definitionInstanceId": "{{Context.DefinitionInstanceId}}",
@@ -43,7 +43,7 @@
     "configurationArguments": {
         "save": "",
         "publish": {
-            "url": "https://cloud.email.aquaservice.com/test_ca"
+            "url": "http://requestbin.whapi.cloud/1bzxdwn1/publish"
         },
         "unpublish": "",
         "stop": "",
