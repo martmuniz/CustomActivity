@@ -28,7 +28,7 @@
         "execute": {
             "inArguments": [
                 {
-                    "emailAddress": "TEXT",
+                    "emailAddress": "{{InteractionDefaults.Email}}",
                     "phone": "{{Contact.Attribute.89D26A54-790C-4A13-83EE-D25DFD1F0A89.Phone}}",
                     "contactKey": "{{Context.ContactKey}}",
                     "message": ""
