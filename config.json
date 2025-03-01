@@ -23,11 +23,11 @@
         "executionMode": "{{Context.ExecutionMode}}",
         "definitionId": "{{Context.DefinitionId}}",
         "activityId": "{{Activity.Id}}",
-        "subscriberkey": "{{Context.ContactKey}}",
+        "contactKey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
                 { "emailAddress": "{{InteractionDefaults.Email}}" },                    
-                { "contactKey": "{{Context.ContactKey}}" },
+                { "subscriberkey": "{{Context.ContactKey}}" },
                 { "mobilePhone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}" },
                 { "message": "" }
                 
