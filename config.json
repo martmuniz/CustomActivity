@@ -23,7 +23,7 @@
         "executionMode": "{{Context.ExecutionMode}}",
         "definitionId": "{{Context.DefinitionId}}",
         "activityId": "{{Activity.Id}}",
-        "contactKey": "{{Context.ContactKey}}",
+        "subscriberkey": "{{Context.ContactKey}}",
         "execute": {
             "inArguments": [
                 { "emailAddress": "{{InteractionDefaults.Email}}" },                    
