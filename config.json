@@ -86,7 +86,7 @@
                 }
               },
               {
-                "mobilePhone": {
+                "mobilePhones": {
                   "dataType": "Text",
                   "isNullable": false,
                   "direction": "in"
