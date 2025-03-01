@@ -28,7 +28,7 @@
             "inArguments": [
                 { "emailAddress": "{{InteractionDefaults.Email}}" },                    
                 { "subscriberkey": "{{Context.ContactKey}}" },
-                { "mobilePhone": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}" },
+                { "mobilePhone": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}" },
                 { "message": "" }
                 
             ],
