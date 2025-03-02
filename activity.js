@@ -11,43 +11,38 @@ connection.on('initActivity', function(data) {
     connection.trigger('requestSchema');
     connection.on('requestedSchema', function (data) {
         
-        // save schema
-        console.log('*** Schema ***', JSON.stringify(data['schema']));
+    // save schema
+    console.log('*** Schema ***', JSON.stringify(data['schema']));
 
-        // add entry source attributes as inArgs
-        const schema = data['schema'];
+    // add entry source attributes as inArgs
+    const schema = data['schema'];
 
-        for (var i = 0, l = schema.length; i < l; i++) {
-            var inArg = {};
-            let attr = schema[i].key;
-            let keyIndex = attr.lastIndexOf('.') + 1;
-            inArg[attr.substring(keyIndex)] = '{{' + attr + '}}';
-            payload['arguments'].execute.inArguments.push(inArg);
-        }
-    });
-
-    let argArr = payload['arguments'].execute.inArguments;
-    
-    // Check if message and recipients exist before assigning
-    if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].message) {
-        document.getElementById('message').value = payload["arguments"].execute.inArguments[0].message;
+    for (var i = 0, l = schema.length; i < l; i++) {
+        var inArg = {};
+        let attr = schema[i].key;
+        let keyIndex = attr.lastIndexOf('.') + 1;
+        inArg[attr.substring(keyIndex)] = '{{' + attr + '}}';
+        payload['arguments'].execute.inArguments.push(inArg);
     }
-    if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].recipients) {
-        document.getElementById('recipients').value = payload["arguments"].execute.inArguments[0].recipients;
+  });
+
+  let argArr = payload['arguments'].execute.inArguments;
+  
+    // Check if customerKey exists before assigning
+    if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].message) {
+        document.getElementById('key').value = payload["arguments"].execute.inArguments[0].message;
     }
 });
 
 // Save Sequence
 connection.on('clickedNext', function() {
-    var message = document.getElementById('message').value.trim();
-    var recipients = document.getElementById('recipients').value.trim();
+    var key = document.getElementById('key').value.trim();
 
-    // Ensure message and recipients are not empty
-    if (message && recipients) {
+    // Ensure key is not empty
+    if (key) {
         payload["arguments"].execute.inArguments[0].message = key;
-        payload["arguments"].execute.inArguments[0].recipients = recipients;
         connection.trigger('updateActivity', payload);
     } else {
-        alert('Los campos no pueden estar vacíos');
+        alert('el campo no puede estar vacío');
     }
 });
