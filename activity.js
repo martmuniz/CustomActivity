@@ -44,7 +44,7 @@ connection.on('clickedNext', function() {
 
     // Ensure message and recipients are not empty
     if (message && recipients) {
-        payload["arguments"].execute.inArguments[0].message = message;
+        payload["arguments"].execute.inArguments[0].message = key;
         payload["arguments"].execute.inArguments[0].recipients = recipients;
         connection.trigger('updateActivity', payload);
     } else {
