@@ -33,7 +33,7 @@
                 }
                 
             ],
-            "url": "http://requestbin.whapi.cloud/1hkdeuy1/execute",
+            "url": "https://cloud.email.aquaservice.com/test_ca",
             "verb":"POST",
             "body": "",
             "header": "",
@@ -50,7 +50,7 @@
       "applicationExtensionKey": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
         "save": "",
         "publish": {
-            "url": "http://requestbin.whapi.cloud/1hkdeuy1/execute",
+            "url": "https://cloud.email.aquaservice.com/test_ca",
             "verb":"POST"
 
         },
