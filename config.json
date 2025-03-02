@@ -29,7 +29,9 @@
                 { 
                  "emailAddress": "{{InteractionDefaults.Email}}",                    
                  "subscriberkey": "{{Context.ContactKey}}",
-                 "recipients": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}",
+                 "recipients": "{{Contact.Attribute.DE_Test_Envio_SMS.Phone}}",
+                 "recipients2": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}",
+                 "recipients3": "{{Interaction.Phone}}",
                  "message": "" 
                 }
                 
