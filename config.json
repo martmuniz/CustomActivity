@@ -29,7 +29,7 @@
                 { 
                  "emailAddress": "{{InteractionDefaults.Email}}",                    
                  "subscriberkey": "{{Context.ContactKey}}",
-                 "mobilePhones": "123456789",
+                 "recipients": "{{Contact.Attribute.SMSCustomActivity.MobileNumber}}",
                  "message": "" 
                 }
                 
