@@ -29,6 +29,7 @@
                 { 
                  "emailAddress": "{{InteractionDefaults.Email}}",                    
                  "subscriberkey": "{{Context.ContactKey}}",
+                 "Phone": "{{Event.DEAudience-ed3b471d-e68e-cfd5-ba97-d231c921dd30.recipients}}",
                  "message": "" 
                 }
                 
