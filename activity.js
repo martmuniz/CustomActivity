@@ -35,34 +35,6 @@ connection.on('initActivity', function(data) {
     // Check if customerKey exists before assigning
     if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].message) {
         document.getElementById('key').value = payload["arguments"].execute.inArguments[0].message;
-
-        var customerKey =  payload["arguments"].execute.inArguments[0].message;
-        var mobilePhone =  payload["arguments"].execute.inArguments[0].Phone; 
-    
-        var load = {
-            message : customerKey,
-            recipients : [mobilePhone]
-           };
-    
-            // Configuración de la solicitud
-            var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'https://cloud.email.aquaservice.com/test_ca', true);
-            xhr.setRequestHeader('Content-Type', 'application/json');
-            //xhr.setRequestHeader('Authorization', 'api-key TU_TOKEN_DE_AUTENTICACION');
-
-            // Manejo de la respuesta
-            xhr.onreadystatechange = function() {
-                if (xhr.readyState === 4) {
-                    if (xhr.status === 200) {
-                        console.log('Respuesta:', xhr.responseText);
-                    } else {
-                        console.error('Error:', xhr.statusText);
-                    }
-                }
-            };
-
-            // Envío de la solicitud con el payload
-            xhr.send(JSON.stringify(load));
     }
 });
 
@@ -73,6 +45,12 @@ connection.on('clickedNext', function() {
     // Ensure key is not empty
     if (key) {
         payload["arguments"].execute.inArguments[0].message = key;
+        payload["arguments"].execute.inArguments = [{
+            message: key,
+            recipients: ["{{Contact.Attribute.SMS_Subscribers.MobileNumber}}"]
+        }];
+        payload["metaData"].isConfigured = true;
+
         connection.trigger('updateActivity', payload);
     } else {
         alert('el campo no puede estar vacío');
