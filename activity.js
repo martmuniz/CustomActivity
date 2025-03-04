@@ -51,7 +51,7 @@ connection.on('initActivity', function(data) {
             headers: {
                 'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' // Encabezado de autenticación
             },
-            data: JSON.stringify(payload),
+            data: JSON.stringify(load),
     
             success: function(response) {
                 // Código a ejecutar si la solicitud es exitosa
