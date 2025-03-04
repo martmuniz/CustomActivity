@@ -34,7 +34,7 @@
                 }
                 
             ],
-            "url": "https://cloud.email.aquaservice.com/test_ca",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
             "verb":"POST",
             "body": "",
             "header": "{\"Authorization\":\"Bearer theToken\"}",
@@ -51,7 +51,7 @@
       "applicationExtensionKey": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
         "save": "",
         "publish": {
-            "url": "https://cloud.email.aquaservice.com/test_ca",
+            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
             "verb":"POST"
 
         },
