@@ -35,37 +35,34 @@ connection.on('initActivity', function(data) {
     // Check if customerKey exists before assigning
     if (payload["arguments"] && payload["arguments"].execute && payload["arguments"].execute.inArguments[0].message) {
         document.getElementById('key').value = payload["arguments"].execute.inArguments[0].message;
+
+        var customerKey =  payload["arguments"].execute.inArguments[0].message;
+        var mobilePhone =  payload["arguments"].execute.inArguments[0].Phone; 
+    
+        var load = {
+            message : customerKey,
+            recipients : [mobilePhone]
+           };
+    
+        $.ajax({
+            url: 'http://requestbin.whapi.cloud/14s6swa1/execute', // URL de la API
+            type: 'POST', // Tipo de solicitud (GET, POST, etc.)
+            dataType: 'json', // Tipo de datos que esperas recibir
+            headers: {
+                'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' // Encabezado de autenticación
+            },
+            data: JSON.stringify(payload),
+    
+            success: function(response) {
+                // Código a ejecutar si la solicitud es exitosa
+                console.log(response);
+            },
+            error: function(error) {
+                // Código a ejecutar si hay un error en la solicitud
+                console.error('Error:', error);
+            }
+        });
     }
-
-
-    var customerKey =  payload["arguments"].execute.inArguments[0].message;
-    var mobilePhone =  payload["arguments"].execute.inArguments[0].Phone; 
-
-    var load = {
-        message : customerKey,
-        recipients : [mobilePhone]
-       };
-
-    $.ajax({
-        url: 'http://requestbin.whapi.cloud/14s6swa1/execute', // URL de la API
-        type: 'POST', // Tipo de solicitud (GET, POST, etc.)
-        dataType: 'json', // Tipo de datos que esperas recibir
-        headers: {
-            'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' // Encabezado de autenticación
-        },
-        data: JSON.stringify(payload),
-
-        success: function(response) {
-            // Código a ejecutar si la solicitud es exitosa
-            console.log(response);
-        },
-        error: function(error) {
-            // Código a ejecutar si hay un error en la solicitud
-            console.error('Error:', error);
-        }
-    });
-
-
 });
 
 // Save Sequence
