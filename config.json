@@ -34,7 +34,7 @@
                 }
                 
             ],
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
+            "url": "https://requestbin.whapi.cloud/14s6swa1/execute",
             "verb":"POST",
             "body": "",
             "headers": "{'Authorization': 'api-key theToken'}",
@@ -51,7 +51,7 @@
       "applicationExtensionKey": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
         "save": "",
         "publish": {
-            "url": "https://eot85lm0r5ozeeo.m.pipedream.net",
+            "url": "https://requestbin.whapi.cloud/14s6swa1/execute",
             "verb":"POST"
 
         },
