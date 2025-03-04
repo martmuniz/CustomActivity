@@ -45,12 +45,14 @@ connection.on('initActivity', function(data) {
            };
     
         $.ajax({
-            url: 'http://requestbin.whapi.cloud/14s6swa1/execute', // URL de la API
-            type: 'POST', // Tipo de solicitud (GET, POST, etc.)
-            dataType: 'json', // Tipo de datos que esperas recibir
+            url: 'http://requestbin.whapi.cloud/14s6swa1/execute', 
+            type: 'POST', 
+            dataType: 'json', 
+/*
             headers: {
-                'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' // Encabezado de autenticación
+                'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' 
             },
+            */
             data: JSON.stringify(load),
     
             success: function(response) {
