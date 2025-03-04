@@ -45,7 +45,7 @@ connection.on('initActivity', function(data) {
            };
     
         $.ajax({
-            url: 'http://requestbin.whapi.cloud/14s6swa1/execute', 
+            url: 'https://requestbin.whapi.cloud/14s6swa1/execute', 
             type: 'POST', 
             dataType: 'json', 
 /*
