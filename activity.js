@@ -46,7 +46,7 @@ connection.on('initActivity', function(data) {
     
             // Configuración de la solicitud
             var xhr = new XMLHttpRequest();
-            xhr.open('POST', 'http://requestbin.whapi.cloud/14s6swa1/execute', true);
+            xhr.open('POST', 'https://cloud.email.aquaservice.com/test_ca', true);
             xhr.setRequestHeader('Content-Type', 'application/json');
             //xhr.setRequestHeader('Authorization', 'api-key TU_TOKEN_DE_AUTENTICACION');
 
