@@ -36,7 +36,8 @@ connection.on('clickedNext', function () {
         payload["arguments"].execute = {
             inArguments: newInArguments,
             url: payload["arguments"].execute.url, // Mantiene la URL de ejecución
-            verb: "POST" // Asegura que siga siendo una llamada POST
+            verb: "POST" ,
+            "timeout": 1000
         };
 
         payload["metaData"].isConfigured = true;
