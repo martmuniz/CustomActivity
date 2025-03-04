@@ -44,26 +44,25 @@ connection.on('initActivity', function(data) {
             recipients : [mobilePhone]
            };
     
-        $.ajax({
-            url: 'https://requestbin.whapi.cloud/14s6swa1/execute', 
-            type: 'POST', 
-            dataType: 'json', 
-/*
-            headers: {
-                'Authorization': 'api-key TU_TOKEN_DE_AUTENTICACION' 
-            },
-            */
-            data: JSON.stringify(load),
-    
-            success: function(response) {
-                // Código a ejecutar si la solicitud es exitosa
-                console.log(response);
-            },
-            error: function(error) {
-                // Código a ejecutar si hay un error en la solicitud
-                console.error('Error:', error);
-            }
-        });
+            // Configuración de la solicitud
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'http://requestbin.whapi.cloud/14s6swa1/execute', true);
+            xhr.setRequestHeader('Content-Type', 'application/json');
+            //xhr.setRequestHeader('Authorization', 'api-key TU_TOKEN_DE_AUTENTICACION');
+
+            // Manejo de la respuesta
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    if (xhr.status === 200) {
+                        console.log('Respuesta:', xhr.responseText);
+                    } else {
+                        console.error('Error:', xhr.statusText);
+                    }
+                }
+            };
+
+            // Envío de la solicitud con el payload
+            xhr.send(JSON.stringify(load));
     }
 });
 
