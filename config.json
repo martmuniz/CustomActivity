@@ -37,7 +37,7 @@
             "url": "https://cloud.email.aquaservice.com/test_ca",
             "verb":"POST",
             "body": "",
-            "header": "",
+            "header": "{\"Authorization\":\"Bearer theToken\"}",
             "format": "",
             "useJwt": false,
             "timeout": 1000
