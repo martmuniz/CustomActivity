@@ -37,7 +37,7 @@
             "url": "https://eot85lm0r5ozeeo.m.pipedream.net/execute",
             "verb":"POST",
             "body": "",
-            "headers": "{\"api-key\":\" theToken\"}",
+            "headers": "https://eot85lm0r5ozeeo.m.pipedream.net",
             "format": "",
             "useJwt": false,
             "timeout": 1000
