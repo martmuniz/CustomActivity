@@ -52,6 +52,7 @@
         "save": "",
         "publish": {
             "url": "https://cloud.email.aquaservice.com/test_ca",
+            "headers": "{'api-key': 'theToken'}",
             "verb":"POST"
 
         },
