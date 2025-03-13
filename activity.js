@@ -37,7 +37,8 @@ connection.on('clickedNext', function () {
             inArguments: newInArguments,
             url: payload["arguments"].execute.url, // Mantiene la URL de ejecución
             verb: "POST" ,
-            "timeout": 1000
+            header: "{'api-key': 'theToken'}",
+            timeout: 1000
         };
 
         payload["metaData"].isConfigured = true;
