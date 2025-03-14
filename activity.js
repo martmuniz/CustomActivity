@@ -1,16 +1,6 @@
 var connection = new Postmonger.Session();
 var payload = {};
 
-// Función para registrar en el almacenamiento local del navegador
-function logApiCall(data) {
-    const logs = JSON.parse(localStorage.getItem('apiLogs')) || [];
-    logs.push({
-        timestamp: new Date().toISOString(),
-        data: data
-    });
-    localStorage.setItem('apiLogs', JSON.stringify(logs));
-}
-
 // Startup Sequence 
 connection.trigger('ready');
 
@@ -46,16 +36,13 @@ connection.on('clickedNext', function () {
         payload["arguments"].execute = {
             inArguments: newInArguments,
             url: payload["arguments"].execute.url, // Mantiene la URL de ejecución
-            verb: "POST",
+            verb: "POST" ,
             "timeout": 1000
         };
 
         payload["metaData"].isConfigured = true;
 
         console.log("Payload enviado:", JSON.stringify(payload));
-
-        // Registrar la llamada API en el almacenamiento local del navegador
-        logApiCall(payload);
 
         connection.trigger('updateActivity', payload);
     } else {
