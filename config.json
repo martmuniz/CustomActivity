@@ -34,10 +34,9 @@
                 }
                 
             ],
-            "url": "https://cloud.email.aquaservice.com/test_ca",
+            "url": "https://cloud.email.aquaservice.com/custom_activity",
             "verb":"POST",
             "body": "",
-            "headers": "{'api-key': 'theToken'}",
             "format": "",
             "useJwt": false,
             "timeout": 1000
@@ -51,7 +50,7 @@
       "applicationExtensionKey": "daa04a33-cf7f-4fd0-88a7-c5c7dab49c41",
         "save": "",
         "publish": {
-            "url": "https://cloud.email.aquaservice.com/test_ca",
+            "url": "https://cloud.email.aquaservice.com/custom_activity",
             "headers": "{'api-key': 'theToken'}",
             "verb":"POST"
 
