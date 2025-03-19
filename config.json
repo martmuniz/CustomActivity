@@ -51,7 +51,6 @@
         "save": "",
         "publish": {
             "url": "https://cloud.email.aquaservice.com/custom_activity",
-            "headers": "{'api-key': 'theToken'}",
             "verb":"POST"
 
         },
